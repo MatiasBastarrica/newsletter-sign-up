@@ -43,3 +43,51 @@ select {
 .hide {
   display: none;
 }
+
+/* ### GENERAL STYLING ### */
+
+body {
+  font-family: var(--ff-roboto);
+  font-weight: var(--fw-400);
+  background-color: var(--neutral-blue-700);
+}
+
+h1 {
+  font-weight: var(--fw-700);
+  color: var(--neutral-blue-800);
+}
+
+ul {
+  list-style: none;
+}
+
+ul li::before {
+  content: "";
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background-image: url(./assets/images/icon-list.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-inline-end: 0.8rem;
+}
+
+input[type="email"],
+label,
+button[type="submit"] {
+  display: block;
+  width: 100%;
+}
+
+input[type="email"] {
+  border: 1px solid var(--neutral-grey);
+  border-radius: 0.3rem;
+  padding: 0.5rem 1rem;
+}
+
+button[type="submit"] {
+  padding: 0.5rem;
+  text-align: center;
+  background-color: var(--neutral-blue-800);
+  color: var(--neutral-white);
+}
