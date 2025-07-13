@@ -91,3 +91,26 @@ button[type="submit"] {
   background-color: var(--neutral-blue-800);
   color: var(--neutral-white);
 }
+
+/* ### NEWSPAPER SIGN-UP ARTICLE ### */
+
+.newsletter-sign-up {
+  background-color: var(--neutral-white);
+  display: grid;
+  grid-template-areas:
+    "sign-up-img"
+    "sign-up-text";
+}
+
+/* ### NEWSLETTER TEXT SECTION ### */
+
+.newsletter__text-section {
+  grid-area: sign-up-text;
+  padding: 2.3rem 1.5em;
+}
+
+/* ### NEWSLETTER IMG SECTION ### */
+
+.newsletter__img-section {
+  grid-area: sign-up-img;
+}
