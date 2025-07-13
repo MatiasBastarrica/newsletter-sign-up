@@ -5,8 +5,8 @@
 
   --neutral-blue-800: hsl(234, 29%, 20%);
   --neutral-blue-700: hsl(235, 18%, 26%);
-  --neugral-grey: hsl(0, 0%, 58%);
-  --neutral-white: hsl(0, 0, 100%);
+  --neutral-grey: hsl(0, 0%, 58%);
+  --neutral-white: hsl(0, 0%, 100%);
 
   --ff-roboto: "Roboto", sans-serif;
   --fw-400: 400;
@@ -25,7 +25,8 @@
   padding: 0;
 }
 
-img {
+img,
+svg {
   display: block;
   max-width: 100%;
 }
@@ -35,4 +36,10 @@ button,
 textarea,
 select {
   font: inherit;
+}
+
+/* ### UTILITIES ### */
+
+.hide {
+  display: none;
 }
