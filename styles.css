@@ -2,6 +2,8 @@
 
 :root {
   --primary-red: hsl(4, 100%, 67%);
+  --accent-red: hsl(347, 100%, 66%);
+  --accent-orange: hsl(13, 99%, 62%);
 
   --neutral-blue-800: hsl(234, 29%, 20%);
   --neutral-blue-700: hsl(235, 18%, 26%);
@@ -149,8 +151,28 @@ button[type="submit"] {
   margin-top: 0.6rem;
 }
 
+.newsletter__text-section input[type="email"]:hover,
+.newsletter__text-section input[type="email"]:focus-visible {
+  color: black;
+  border-color: black;
+}
+
+.newsletter__text-section input[type="email"]:hover {
+  cursor: pointer;
+}
+
 .newsletter__text-section button[type="submit"] {
   margin-top: 1.5rem;
+}
+
+.newsletter__text-section button[type="submit"]:hover {
+  background: linear-gradient(
+    to right,
+    var(--accent-red),
+    var(--accent-orange)
+  );
+  box-shadow: 0px 5px 15px hsla(0, 100%, 66%, 0.691);
+  cursor: pointer;
 }
 
 /* ### NEWSLETTER IMG SECTION ### */
