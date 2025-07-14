@@ -50,7 +50,17 @@
           </form>
         </div>
         <div class="newsletter__img-section">
-          <img src="./assets/images/illustration-sign-up-mobile.svg" alt="" />
+          <picture>
+            <source
+              media="(min-width: 56.25em)"
+              srcset="./assets/images/illustration-sign-up-desktop.svg"
+            />
+            <source
+              media="(min-width: 23.438em)"
+              srcset="./assets/images/illustration-sign-up-tablet.svg"
+            />
+            <img src="./assets/images/illustration-sign-up-mobile.svg" alt="" />
+          </picture>
         </div>
         <div class="success-message hide">
           <div class="flex-container">
