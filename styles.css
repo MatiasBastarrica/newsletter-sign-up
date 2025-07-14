@@ -46,6 +46,11 @@ select {
   display: none;
 }
 
+.bold {
+  color: var(--neutral-blue-800);
+  font-weight: var(--fw-700);
+}
+
 /* ### GENERAL STYLING ### */
 
 body {
@@ -89,7 +94,9 @@ input[type="email"] {
   padding: 1rem 1.5rem;
 }
 
-button[type="submit"] {
+button[type="submit"],
+button[type="button"] {
+  cursor: pointer;
   padding: 0.5rem;
   text-align: center;
   background-color: var(--neutral-blue-800);
@@ -102,6 +109,8 @@ button[type="submit"] {
 /* ### NEWSPAPER SIGN-UP ARTICLE ### */
 
 .newsletter-sign-up {
+  max-width: 375px;
+  margin-inline: auto;
   background-color: var(--neutral-white);
   display: grid;
   grid-template-areas:
@@ -185,11 +194,45 @@ input[type="email"].email-input-invalid {
     var(--accent-orange)
   );
   box-shadow: 0px 5px 15px hsla(0, 100%, 66%, 0.691);
-  cursor: pointer;
 }
 
 /* ### NEWSLETTER IMG SECTION ### */
 
 .newsletter__img-section {
   grid-area: sign-up-img;
+}
+
+/* ### MOBILE SUCCESS MODAL ### */
+
+.success-message {
+  position: absolute;
+  z-index: 2;
+  background-color: var(--neutral-white);
+  max-width: 375px;
+}
+
+.success-message .flex-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  min-height: 100vh;
+  padding: 2rem 1.5rem;
+}
+
+.success-message .icon-success {
+  width: 64px;
+  height: 64px;
+  margin-top: 9rem;
+  margin-bottom: 1.6rem;
+}
+
+.success-message h2 {
+  font-size: 2.5rem;
+  color: var(--neutral-blue-800);
+  font-weight: var(--fw-700);
+  line-height: 1;
+}
+
+.success-message p {
+  margin-bottom: auto;
 }
