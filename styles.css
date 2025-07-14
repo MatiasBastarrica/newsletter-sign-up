@@ -112,6 +112,9 @@ button[type="button"] {
   max-width: 375px;
   margin-inline: auto;
   background-color: var(--neutral-white);
+}
+
+.newsletter-sign-up .grid-container {
   display: grid;
   grid-template-areas:
     "sign-up-img"
@@ -206,14 +209,7 @@ input[type="email"].email-input-invalid {
 /* ### MOBILE SUCCESS MODAL ### */
 
 .success-message {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  /* z-index: 2; */
   background-color: var(--neutral-white);
-  max-width: 375px;
 }
 
 .success-message .flex-container {
@@ -221,13 +217,12 @@ input[type="email"].email-input-invalid {
   flex-direction: column;
   gap: 1.5rem;
   min-height: 100vh;
-  padding: 2rem 1.5rem;
+  padding: 9rem 1.5rem 2rem;
 }
 
 .success-message .icon-success {
   width: 64px;
   height: 64px;
-  margin-top: 9rem;
   margin-bottom: 1.6rem;
 }
 
@@ -250,7 +245,6 @@ input[type="email"].email-input-invalid {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 1.5rem;
   }
 
   .newsletter-sign-up {
@@ -259,5 +253,41 @@ input[type="email"].email-input-invalid {
     margin-inline: unset;
     border-radius: 1.5rem;
     padding: 1.5rem;
+  }
+}
+
+@media (min-width: 26em) {
+  main {
+    padding: 1.5rem;
+  }
+  .success-message {
+    border-radius: 1.6rem;
+  }
+
+  .success-message .flex-container {
+    min-height: unset;
+
+    padding: 2.5rem 3rem 3rem;
+    max-width: 420px;
+  }
+
+  .success-message .icon-success {
+    margin-bottom: unset;
+    width: 50px;
+    height: 50px;
+  }
+
+  .success-message h2 {
+    margin-top: 0.4rem;
+    font-size: 3rem;
+  }
+
+  .success-message p {
+    font-size: 0.875rem;
+  }
+
+  .success-message button[type="button"] {
+    margin-top: 0.5rem;
+    padding: 0.75rem 1rem;
   }
 }

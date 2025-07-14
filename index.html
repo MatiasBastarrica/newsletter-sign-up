@@ -25,42 +25,47 @@
   <body>
     <main>
       <article class="newsletter-sign-up">
-        <div class="newsletter__text-section">
-          <h1 class="newsletter-title">Stay updated!</h1>
-          <p class="newsletter-description">
-            Join 60,000+ product managers receiving monthly updates on:
-          </p>
-          <ul>
-            <li>Product discovery and building what matters</li>
-            <li>Measuring to ensure updates are a success</li>
-            <li>And much more!</li>
-          </ul>
-          <form action="#" novalidate>
-            <label for="e-mail" class="email-label">Email address</label>
-            <input
-              type="email"
-              name="e-mail"
-              id="e-mail"
-              placeholder="email@company.com"
-              class="email-input"
-            />
-            <button class="submit-btn" type="submit">
-              Subscribe to monthly newsletter
-            </button>
-          </form>
-        </div>
-        <div class="newsletter__img-section">
-          <picture>
-            <source
-              media="(min-width: 56.25em)"
-              srcset="./assets/images/illustration-sign-up-desktop.svg"
-            />
-            <source
-              media="(min-width: 23.438em)"
-              srcset="./assets/images/illustration-sign-up-tablet.svg"
-            />
-            <img src="./assets/images/illustration-sign-up-mobile.svg" alt="" />
-          </picture>
+        <div class="grid-container">
+          <div class="newsletter__text-section">
+            <h1 class="newsletter-title">Stay updated!</h1>
+            <p class="newsletter-description">
+              Join 60,000+ product managers receiving monthly updates on:
+            </p>
+            <ul>
+              <li>Product discovery and building what matters</li>
+              <li>Measuring to ensure updates are a success</li>
+              <li>And much more!</li>
+            </ul>
+            <form action="#" novalidate>
+              <label for="e-mail" class="email-label">Email address</label>
+              <input
+                type="email"
+                name="e-mail"
+                id="e-mail"
+                placeholder="email@company.com"
+                class="email-input"
+              />
+              <button class="submit-btn" type="submit">
+                Subscribe to monthly newsletter
+              </button>
+            </form>
+          </div>
+          <div class="newsletter__img-section">
+            <picture>
+              <source
+                media="(min-width: 56.25em)"
+                srcset="./assets/images/illustration-sign-up-desktop.svg"
+              />
+              <source
+                media="(min-width: 23.438em)"
+                srcset="./assets/images/illustration-sign-up-tablet.svg"
+              />
+              <img
+                src="./assets/images/illustration-sign-up-mobile.svg"
+                alt=""
+              />
+            </picture>
+          </div>
         </div>
       </article>
       <div class="success-message hide">
