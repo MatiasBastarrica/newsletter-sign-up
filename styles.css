@@ -142,23 +142,36 @@ button[type="submit"] {
 }
 
 .newsletter__text-section label[for="e-mail"] {
+  position: relative;
   color: var(--neutral-blue-800);
   font-size: 0.765rem;
   font-weight: var(--fw-700);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .newsletter__text-section input[type="email"] {
   margin-top: 0.6rem;
 }
 
-.newsletter__text-section input[type="email"]:hover,
+.newsletter__text-section input[type="email"]:focus,
 .newsletter__text-section input[type="email"]:focus-visible {
   color: black;
   border-color: black;
 }
 
-.newsletter__text-section input[type="email"]:hover {
-  cursor: pointer;
+input[type="email"].email-input-invalid {
+  position: relative;
+  border: 2px solid hsl(4, 100%, 67%);
+  color: hsl(4, 100%, 67%);
+  background-color: hsla(4, 100%, 67%, 0.173);
+}
+
+.newsletter__text-section label[for="e-mail"].invalid-message::after {
+  font-size: inherit;
+  content: "Valid email required";
+  color: hsl(4, 100%, 67%);
 }
 
 .newsletter__text-section button[type="submit"] {
