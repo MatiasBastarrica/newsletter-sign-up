@@ -187,7 +187,8 @@ input[type="email"].email-input-invalid {
   margin-top: 1.5rem;
 }
 
-.newsletter__text-section button[type="submit"]:hover {
+.newsletter__text-section button[type="submit"]:hover,
+.success-message button[type="button"]:hover {
   background: linear-gradient(
     to right,
     var(--accent-red),
@@ -206,6 +207,10 @@ input[type="email"].email-input-invalid {
 
 .success-message {
   position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   /* z-index: 2; */
   background-color: var(--neutral-white);
   max-width: 375px;

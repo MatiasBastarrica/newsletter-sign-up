@@ -4,6 +4,7 @@ const emailLabel = document.querySelector(".email-label");
 const emailInput = document.querySelector(".email-input");
 const newsletterForm = document.querySelector("form");
 const successModal = document.querySelector(".success-message");
+const successModalBtn = successModal.querySelector("button");
 
 function validateEmail(email) {
   const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
@@ -25,4 +26,4 @@ newsletterForm.addEventListener("submit", (e) => {
   }
 });
 
-successModal.addEventListener("click", toggleSuccessModal);
+successModalBtn.addEventListener("click", toggleSuccessModal);
