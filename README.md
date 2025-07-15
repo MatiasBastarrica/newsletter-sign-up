@@ -35,7 +35,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [My Solution](https://your-solution-url.com)
+- Solution URL: [My Solution](https://www.frontendmentor.io/solutions/newsletter-sign-up-with-success-message-mb-E533PHCppV)
 - Live Site URL: [Live](https://matiasbastarrica.github.io/newsletter-sign-up/)
 
 ## My process
