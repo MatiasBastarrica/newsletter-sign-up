@@ -188,6 +188,7 @@ input[type="email"].email-input-invalid {
 
 .newsletter__text-section button[type="submit"] {
   margin-top: 1.5rem;
+  font-weight: var(--fw-700);
 }
 
 .newsletter__text-section button[type="submit"]:hover,
@@ -252,6 +253,9 @@ input[type="email"].email-input-invalid {
     overflow: hidden;
     margin-inline: unset;
     border-radius: 1.5rem;
+  }
+
+  .newsletter-sign-up .grid-container {
     padding: 1.5rem;
   }
 }
@@ -289,5 +293,50 @@ input[type="email"].email-input-invalid {
   .success-message button[type="button"] {
     margin-top: 0.5rem;
     padding: 0.75rem 1rem;
+  }
+}
+
+@media (min-width: 56.25em) {
+  .newsletter-sign-up .grid-container {
+    grid-template-areas: "sign-up-text sign-up-img";
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+    padding-inline-start: 2.5rem;
+  }
+
+  .newsletter-sign-up {
+    max-width: 850px;
+  }
+
+  .newsletter__text-section {
+    align-self: center;
+  }
+
+  .newsletter-title {
+    font-size: 3rem;
+  }
+
+  .newsletter__text-section p {
+    font-size: 0.9rem;
+    margin-top: 1rem;
+  }
+
+  .newsletter__text-section ul > * + * {
+    margin-top: 0.6rem;
+  }
+
+  .newsletter__text-section ul {
+    font-size: 0.9rem;
+  }
+
+  ul li::before {
+    width: 18px;
+    height: 18px;
+  }
+
+  .newsletter__text-section [type="email"],
+  .newsletter__text-section button[type="submit"] {
+    padding: 0.8rem 1.325rem;
+    font-size: 0.925rem;
   }
 }
